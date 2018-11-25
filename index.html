@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+
+     <script src="https://cdn.jsdelivr.net/npm/eosjs-ecc@4.0.4/lib/eosjs-ecc.min.js"
+    integrity="sha512-dYFDmK/d9r3/NCp6toLtfkwOjSMRBaEzaGAx1tfRItC0nsI0hVLERk05iNBQR7uDNI7ludYhcBI4vUiFHdjsTQ=="
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script>
+
+
+        var scatter;
+        document.addEventListener('scatterLoaded', scatterExtension => {
+            // Scatter will now be available from the window scope.
+            // At this stage the connection to Scatter from the application is
+            // already encrypted.
+            scatter = window.scatter;
+
+        // It is good practice to take this off the window once you have
+        // a reference to it.
+        //window.scatter = null;
+
+             //ecc = require('eosjs-ecc');
+        // If you want to require a specific version of Scatter
+        //alert("hello");
+        //...
+
+        })
+       
+
+
+        function myclick()
+        {
+             console.log("hello world");
+        }
+
+     
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+<div>
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary"  onclick="myclick()" type="button">EOS</button>
+                    </span>
+      
+
+</div>
+
+<br>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
